@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inkshot Tattoo Parlour</title>
+	<link href="./style/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/xie3low.css">
+	<script src="https://kit.fontawesome.com/54f27bdb7c.js" crossorigin="anonymous"></script>
+	<script src="./script/script.js"></script>
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<div class="navBar" id="navBar">
+		
+			<a href="index.html"><img src="./images/InkShot.svg" id="logo"></a>
+			<a href="index.html" id="home"><h2 class="hover">Home</h2></a>
+			<a href="./about/about.html" id="about"><h2 class="hover">About</h2></a>
+			<a href="./contact/contact.html" id="contact"><h2 class="hover">Contact</h2></a>
+		
+		</div>
+		<div class="buffer" id="buffer"></div>
+		<div class="heroContainer">
+			<div class="heroImage">
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			
+				<button class="bookButton">
+					<h1>Book Now</h1>
+				</button>
+			
+			</div>
+				
+						
+			<div class="gallery">
+				<img class="gSlides" src="./images/pTat.jpg" style="width: 100%; height: 100%;">
+				<img class="gSlides" src="./images/tat2.jpg" style="width: 100%; height: 100%;">
+				<img class="gSlides" src="./images/pierce.jpg" style="width: 100%; height: 100%;">
+				
+				<button class="left"onclick="plusDivs(-1)">&#10094;</button>
+				<button class="right"onclick="plusDivs(1)">&#10095;</button>
+						
+			</div>
+				
+			<div class="signUp">
+			
+			<h2>Sign Up</h2>
+			
+			</div>
+			</div>
+			
+		</div>
+		<div class="whoWeAre">
+		
+			<h1>Who are we?</h1>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<a href="./about/about.html"><button class="learnMore">
+				<h1>Learn More</h1>
+				</button>
+			</a>
+		
+		</div>
+		
+		<div class="products">
+		
+			<div class="tats">
+			
+				<h2>Tattoos</h2>
+			
+			</div>
+			
+			<div class="piercings">
+			
+				<h2>Piercings</h2>
+			
+			</div>
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="footer">
+		
+			<p>57,Ferrybank,Arklow, Co. Wicklow,<p>
+			<p>0402 123456</P>
+			
+			<a class="insta" href="https://www.instagram.com/inkshot_tattoo_saloon_/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a class="facebook" href="https://facebook.com/Inkshot-Tat-Arklow-789769311116346/" target="_blank"><i class="fab fa-facebook"></i></a>
+		
+		</div>
+	
+	</div>
+	
+
+		<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("gSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+	
+	
+	<script src="./script/carousel.js"></script>
+</body>
+</html>
